@@ -7,7 +7,7 @@ class Shop{
 
   const Shop(this.id, this.name, this.products);
 
-  Map toJson(){
+  Map toMap(){
     var productsId =
       List.generate(products.length, (index) => products[index].id);
     return {

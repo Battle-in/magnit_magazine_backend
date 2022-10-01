@@ -13,5 +13,5 @@ Shop generateShopWithRandomProducts(int index){
   List<Product> productsForShop = List.generate(random.nextInt(8),
           (index) => products[random.nextInt(8)]);
   print(productsForShop.toString());
-  return Shop(index, shopsAddresses[index] ?? '', productsForShop);
+  return Shop(index, shopsAddresses[index], productsForShop);
 }

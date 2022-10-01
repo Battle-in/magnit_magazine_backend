@@ -3,8 +3,8 @@ import 'package:magnit_magazine/models/product.dart';
 
 ///associate with constants/characteristics.dart
 final List<Product> products = [
-  Product(0, 'сыр', characteristics[0]),
-  Product(1, 'молоко', characteristics[1]),
+  Product(0, 'Сыр', characteristics[0]),
+  Product(1, 'Молоко', characteristics[1]),
   Product(2, 'Хлеб', characteristics[2]),
   Product(3, 'Масло полсолнечное', characteristics[3]),
   Product(4, 'Масло сливочное', characteristics[4]),
