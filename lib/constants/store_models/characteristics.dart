@@ -10,5 +10,6 @@ const List<Characteristics> characteristics = [
   Characteristics(5, 0.3),
   Characteristics(6, 0.3),
   Characteristics(7, 1.4),
-  Characteristics(8, 1)
+  Characteristics(8, 1),
+  Characteristics(9, 1.2)
 ];

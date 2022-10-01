@@ -8,9 +8,13 @@ import 'package:magnit_magazine/constants/store_models/shops.dart';
 main() async {
   final int port = 8080;
   final server = Jaguar(port: port);
-  server.get('/api0.1/stores', (ctx) => shops);
+  server.getJson('/api0.1/stores', (ctx){
+    List<Map> stores = [];
+    for (var element in shops) {stores.add(element.toJson());}
+    return stores;
+  });
   server.get('/api0.1/magazines/:index',
-          (ctx) => magazinesAddresses[ctx.query.getInt('index', 0) ?? 0]);
+          (ctx) => shops);
   server.getJson('/person', (context) => Shop(19, 'jeca', [Product(7, 'cola', Characteristics(7, 2))]));
   print('server started at: localhost:$port');
   await server.serve();

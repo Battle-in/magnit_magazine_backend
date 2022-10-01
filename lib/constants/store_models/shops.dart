@@ -10,7 +10,8 @@ List<Shop> shops = List<Shop>.generate(shopsAddresses.length,
 Shop generateShopWithRandomProducts(int index){
   Random random = Random();
   ///put in this variables random products
-  List<Product> productsForShop = List.generate(random.nextInt(10),
-          (index) => products[random.nextInt(9)]);
+  List<Product> productsForShop = List.generate(random.nextInt(8),
+          (index) => products[random.nextInt(8)]);
+  print(productsForShop.toString());
   return Shop(index, shopsAddresses[index] ?? '', productsForShop);
 }
