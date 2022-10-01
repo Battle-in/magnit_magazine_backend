@@ -101,13 +101,13 @@ def main():
 г. Москва, ул. Братиславская, 14
 07:59-22:59"""
     sep = string.split('\n')
-    res = '{\n'
+    res = '[\n'
     magazine_index = 0
     for i in range(len(sep)):
         if i % 2 == 0:
-            res += '    ' + (str(magazine_index)) + ': "' + sep[i] + '",\n'
+            res += '    ' + '"' + sep[i] + '",\n'
             magazine_index += 1
-    res += '}'
+    res += '];'
     print(res)
 
 if __name__ == '__main__':
