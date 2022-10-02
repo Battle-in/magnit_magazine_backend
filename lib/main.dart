@@ -9,8 +9,8 @@ main() async {
   server.getJson('/api0.1/shops', _shopHandler);
   server.getJson('/api0.1/products', _productsHandler);
   server.getJson('/api0.1/characteristics', _characteristicsHandler);
-  print('server started at: localhost:$port');
   await server.serve();
+  print('server started at: localhost:$port');
 }
 
 ///handlers don't catch error about incorrect argument

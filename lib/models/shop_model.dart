@@ -1,4 +1,4 @@
-import 'package:magnit_magazine/models/product.dart';
+import 'package:magnit_magazine/models/product_model.dart';
 
 class Shop{
   final int id;

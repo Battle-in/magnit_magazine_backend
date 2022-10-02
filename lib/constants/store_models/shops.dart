@@ -1,7 +1,7 @@
 import 'package:magnit_magazine/constants/shops_addresses.dart';
 import 'package:magnit_magazine/constants/store_models/products.dart';
-import 'package:magnit_magazine/models/product.dart';
-import 'package:magnit_magazine/models/shop.dart';
+import 'package:magnit_magazine/models/product_model.dart';
+import 'package:magnit_magazine/models/shop_model.dart';
 import 'dart:math';
 
 List<Shop> shops = List<Shop>.generate(shopsAddresses.length,
